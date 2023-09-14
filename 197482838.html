@@ -1,0 +1,40 @@
+<!-- recalled_popups -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/recalled_popups.css">
+    </head>
+    <body>
+        <!-- the overlay showing the user the pop-up messages that showed up -->
+        <div id="overlay">
+            <div id="overlay-card">
+                <h2>Here is what your pop-up messages were: </h2>
+                <div id="popups"></div>
+                <br>
+                <a href="780764425.html">Continue</a>
+            </div> 
+        </div>
+        <div class="wrapper">
+            <section class="main">
+                <div id="response2">
+                    <!-- pop-up remembering question goes below -->
+                    <h1>Please note down what you remember from the pop-up messages:</h1>
+                    <div class="boxes">
+                        <textarea id="response" rows="15" required></textarea>
+                    </div>
+                </div>
+                <br>
+                <p id="submit">submit</p>
+            </section>
+        </div>
+        <script src="js/recalled_popups.js" type="module"></script>  
+    </body> 
+</html> 

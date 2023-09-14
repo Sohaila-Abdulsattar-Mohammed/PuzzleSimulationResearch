@@ -1,0 +1,52 @@
+<!-- sudoku-practice -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sudoku Practice</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/sudoku.css">
+        <script src="https://kit.fontawesome.com/fe678f59d4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- the overlays that will be displayed when the user succesfully finishes a round -->
+        <div id="overlay">
+            <div id="overlay-card">
+                <h2>Great job! Your submission is correct!</h2>
+                <i class="fa-solid fa-circle-check fa-5x" style="color: white;"></i>
+                <br><br>
+                <a href="496443835.html">Click here to continue</a>
+            </div>   
+        </div>
+        
+        <div class="wrapper">
+            <header>
+                <div class="time">
+                    <label id="minutes">00</label>
+                    <label id="colon">:</label>
+                    <label id="seconds">00</label>
+                </div>
+                <nav>
+                    <ul>
+                        <li id="submit">Submit</li>
+                        <li><a href="496443835.html">Skip Practice Round</a></li>
+                    </ul>
+                </nav>   
+            </header>
+            <br>
+            
+            <!-- sudoku board -->
+            <!-- relevant credits: https://www.youtube.com/watch?v=S4uRtTb8U-U&ab_channel=KennyYipCoding -->
+            <h1>Sudoku: Practice</h1>
+            <div id="board"></div>
+            <br>
+            <div id="digits"></div>
+            <div id="erase">erase</div>
+        </div>
+    <script src="js/sudoku-practice.js" type="module"></script>  
+    </body>
+</html>

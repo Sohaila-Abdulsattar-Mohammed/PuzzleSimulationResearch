@@ -1,0 +1,62 @@
+<!-- strain-question -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/strain-question.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <section class="main">
+                <h1>Thank you so much for completing these tasks. We would like to know how you felt during these tasks.</h1>
+                <br>
+                <!-- the strain question goes below -->
+                <h2>How stressed did you feel while completing the tasks?</h2>
+                <div class="slider">
+                    <input type="range" min="0" max="10" value="5" id="general_strain" step="1" list="strain">
+                    <datalist id="strain">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>     
+                </div> 
+                <div class="labels">
+                    <p>0</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                    <p>9</p>
+                    <p>10</p>
+                </div>
+                <div class="description">
+                    <p id="first">very relaxed </p>
+                    <p id="second">neutral</p>
+                    <p id="third">very stressed</p>
+                </div>
+                <br>
+                <a id="submit">submit</a>   
+            </section>
+        </div>
+        <script src="js/strain-question.js" type="module"></script>  
+    </body>
+</html>  

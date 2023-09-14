@@ -1,0 +1,112 @@
+body {
+  background-color: #F9FBFB;
+  margin: 1.5em;
+  font-family: "Poppins", sans-serif;
+  color: #505168;
+  text-align: center;
+  animation: fade 1s ease-in-out forwards;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.main {
+  text-align: center;
+}
+
+#submit {
+  color: #505168;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#submit:hover {
+  color: rgb(147, 144, 167);
+}
+
+textarea {
+  background-color: #F9FBFB;
+  color: #505168;
+  border: 2px solid #505168;
+  border-radius: 4px;
+  width: 90%;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+#response1 {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  padding-right: 3em;
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #969797;
+  z-index: 2;
+  text-align: center;
+  display: none;
+}
+
+#overlay-card {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #F9FBFB;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: auto;
+  padding-bottom: 1em;
+  animation: zoom 1s ease-in-out forwards;
+  opacity: 0;
+}
+#overlay-card #popups {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+#overlay-card a {
+  color: #505168;
+}
+#overlay-card a:hover {
+  color: rgb(147, 144, 167);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoom {
+  from {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+@media only screen and (max-device-width: 700px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=recalled_popups.css.map */

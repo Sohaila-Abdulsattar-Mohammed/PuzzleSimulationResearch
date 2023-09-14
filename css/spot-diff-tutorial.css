@@ -1,0 +1,62 @@
+body {
+  background-color: #F9FBFB;
+  margin: 1.5em;
+  font-family: "Poppins", sans-serif;
+  color: #505168;
+  animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+a {
+  color: #505168;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgb(147, 144, 167);
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  z-index: -1;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+.tutorial {
+  text-align: center;
+}
+
+.phone {
+  display: none;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-80px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media only screen and (max-device-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+  img {
+    width: 100%;
+    padding-top: 3em;
+  }
+  .desktop {
+    display: none;
+  }
+  .phone {
+    display: block;
+  }
+}/*# sourceMappingURL=spot-diff-tutorial.css.map */
